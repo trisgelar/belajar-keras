@@ -34,3 +34,13 @@
 | linear(x) 	| f(x) = x 	|
 | softmax(x, axis=-1) 	| coerces vector x values to sum to 1.0 so they can be loosely interpreted as probabilities 	|
 
+3. Accuracy Metrics Functions
+
+| Function 	| Description 	|
+|--------------------------------------------------------	|----------------------------------	|
+| binary_accuracy(y_true, y_pred) 	| For binary classification 	|
+| categorical_accuracy(y_true, y_pred) 	| For multiclass classification 	|
+| sparse_categorical_accuracy(y_true, y_pred) 	| Rarely used (see documentation)) 	|
+| top_k_categorical_accuracy(y_true, y_pred, k=5) 	| Rarely used (see documentation)) 	|
+| sparse_top_k_categorical_accuracy(y_true, y_pred, k=5) 	| Rarely used (see documentation)) 	|
+
