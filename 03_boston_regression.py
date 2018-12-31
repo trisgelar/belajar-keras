@@ -65,7 +65,6 @@ def main():
 	test_x = data_x[n_train:N,:]
 	test_y = data_y[n_train:N]
 
-	# 2. mendefinisikan model
 	# 2. Mendefinisikan Model
 
 	init = K.initializers.RandomUniform(seed=1)

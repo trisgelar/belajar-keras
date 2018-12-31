@@ -44,3 +44,24 @@
 | top_k_categorical_accuracy(y_true, y_pred, k=5) 	| Rarely used (see documentation)) 	|
 | sparse_top_k_categorical_accuracy(y_true, y_pred, k=5) 	| Rarely used (see documentation)) 	|
 
+4. Five Common Keras Optimizers
+
+| Optimizer 	| Description 	|
+|----------------------------------------------------------------------------------	|---------------------------------------------------------------------	|
+| SGD(lr=0.01, momentum=0.0, decay=0.0, nesterov=False) 	| Basic optimizer for simple neural networks 	|
+| RMSprop(lr=0.001, rho=0.9, epsilon=None, decay=0.0) 	| Often used with recurrent neural networks, very similar to Adadelta 	|
+| Adagrad(lr=0.01, epsilon=None, decay=0.0) 	| General purpose adaptive algorithm 	|
+| Adadelta(lr=1.0, rho=0.95, epsilon=None, decay=0.0) 	| Advanced version of Adagrad, similar to RMSprop 	|
+| Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False) 	| Excellent general-purpose, adaptive algorithm 	|
+
+5. Embedding Layer Parameters
+
+| Name 	| Description 	|
+|------------------------	|--------------------------------------------------------	|
+| input_dim 	| Size of the vocabulary, i.e. maximum integer index + 1 	|
+| output_dim 	| Dimension of the dense embedding 	|
+| embeddings_initializer 	| Initializer for the embeddings matrix 	|
+| embeddings_regularizer 	| Regularizer function applied to the embeddings matrix 	|
+| embeddings_constraint 	| Constraint function applied to the embeddings matrix 	|
+| mask_zero 	| Whether or not the input value 0 is a padding value 	|
+| input_length 	| Length of input sequences, when it is constant 	|
